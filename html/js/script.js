@@ -187,16 +187,17 @@ function submitData() {
             const resultBody = document.getElementById('results');
             const newRow = document.createElement('tr');
 
-            newRow.innerHTML =
-                <td>${xValue}</td>
-                <td>${yValue}</td>
-                <td>${rValue}</td>
-                <td>${json.result !== undefined ? (json.result ? 'true' : 'false') : 'undefined'}</td>
-                <td>${json.currentTime !== undefined ? json.currentTime : 'undefined'}</td>
-                <td>${json.executionTime !== undefined ? json.executionTime : 'undefined'}</td>
-            ;
+            newRow.innerHTML = `
+              <td>${xValue}</td>
+              <td>${yValue}</td>
+              <td>${rValue}</td>
+              <td>${json.result !== undefined ? (json.result ? 'true' : 'false') : 'undefined'}</td>
+              <td>${json.currentTime !== undefined ? json.currentTime : 'undefined'}</td>
+              <td>${json.executionTime !== undefined ? json.executionTime : 'undefined'}</td>
+          `;
 
             resultBody.appendChild(newRow);
+            saveResponseToLocalStorage(json);
 
         })
         .catch(error => console.error('Error:', error));
