@@ -156,12 +156,26 @@ function setX(value) {
     console.log("X set to: " + xValue);
 }
 
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.style.display = 'block';
+    notification.style.opacity = 1;
+
+    setTimeout(() => {
+        notification.style.opacity = 0;
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 500);
+    }, 3000);
+}
+
 function submitData() {
     const yText = document.getElementById('yValue').value;
     let yValue = 0;
     if (!/^-?\d+(\.\d+)?$/.test(yText) || yText < -5 || yText > 5) {
-        alert("Please enter a valid Y coordinate between -5 and 5.");
-        console.warn("Invalid Y value:", yValue);
+        showNotification("Please enter a valid Y coordinate between -5 and 5.");
+        console.warn("Invalid Y value:", yText);
         return;
     } else {
         yValue = Number(yText);
@@ -170,7 +184,7 @@ function submitData() {
 
     // Simple validation
     if (xValue === null || isNaN(yValue) || yValue < -5 || yValue > 5 || isNaN(rValue)) {
-        alert("Please enter valid values for all fields.");
+        showNotification("Please enter valid values for all fields.");
         return;
     }
 

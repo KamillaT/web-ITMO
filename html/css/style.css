@@ -36,3 +36,17 @@ th, td {
     background-color: #0056b3;
     color: white;
 }
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(244, 67, 54, 0.66);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    z-index: 1000;
+}
