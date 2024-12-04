@@ -1,5 +1,2 @@
-servlets/AreaCheckServlet.class
-utils/Result.class
-servlets/ControllerServlet.class
-servlets/ClearSessionServlet.class
-utils/SessionListener.class
+web/Point.class
+web/HelloBean.class

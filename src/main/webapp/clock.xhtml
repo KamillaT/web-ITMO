@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Current Time</title>
+    <link rel="stylesheet" type="text/css" href="css/clock.css"/>
+    <script src="js/clock.js"></script>
+</h:head>
+<h:body>
+    <nav>
+        <div>
+            <h:outputText value="卡米拉, Group: P3223" />
+            <span id="currentDate"></span>
+        </div>
+        <div>
+            <h:link value="Go to Main Page" outcome="index" />
+        </div>
+        <div>
+            <span>
+                <label for="size">Size</label>
+                <output id="result" name="result">0.7vw</output>
+            </span>
+            <form>
+                <input id="size" name="size" type="range" min="5" max="50" step="0.1" value="10" />
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="clock">
+            <div class="light">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="clock">
+            <div class="light">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="clock">
+            <div class="light">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </main>
+</h:body>
+</html>
