@@ -1,0 +1,15 @@
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/App.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/rest/PointResource.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/filter/JacksonConfig.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/service/UserService.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/entity/Point.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/filter/CORSFilter.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/service/HitChecker.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/service/PointService.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/service/PasswordHash.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/db/DBManager.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/entity/User.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/rest/UserResource.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/jwt/JwtUtil.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/service/Validator.java
+/home/kamilla/IdeaProjects/web-lab-4/backend/src/main/java/com/example/backend/filter/AuthFilter.java
